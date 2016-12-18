@@ -32,5 +32,24 @@ namespace YazıhaneApp
         {
             listBox1.Items.Add("İsim\t" + "Cinsiyet\t" + "OtobusTuru");
         }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void listBox1_DoubleClick(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Silmek İstiyor Musun?", "Onay Ekranı", MessageBoxButtons.YesNo);
+
+            if (result == DialogResult.Yes)
+            {
+                listBox1.Items.RemoveAt(listBox1.SelectedIndex);
+            }
+        }
+
+        private void listBox1_MouseEnter(object sender, EventArgs e)
+        {
+        }
     }
 }
