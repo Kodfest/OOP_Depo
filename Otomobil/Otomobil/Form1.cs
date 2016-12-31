@@ -21,12 +21,17 @@ namespace Otomobil
         {
             Porsche superAraba = new Porsche();
             Tofas duldul = new Tofas();
+            //Araba arab = new Araba(); //Abstract
+            Mercedes memurArabasi = new Mercedes();
 
             MessageBox.Show(superAraba.Yazdir());
             MessageBox.Show(superAraba.Calistir());
 
             MessageBox.Show(duldul.Yazdir());
             MessageBox.Show(duldul.Calistir());
+
+            MessageBox.Show(memurArabasi.Yazdir());
+            MessageBox.Show(memurArabasi.Calistir());
         }
     }
 }

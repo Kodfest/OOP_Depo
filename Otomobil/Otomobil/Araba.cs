@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Otomobil
 {
-    public class Araba
+    public abstract class Araba
     {
         public string seri { get; set; }
         public string model { get; set; }
@@ -18,9 +18,11 @@ namespace Otomobil
             return string.Format("Seri \t\t: {0} \nModel \t\t: {1} \nMotor Hacmi \t: {2} \nMotor Gücü \t: {3}", seri, model, motorHacmi, motorGucu);
         }
 
-        public virtual string Calistir()
-        {
-            return "Araba Çalıştı";
-        }
+        //public virtual string Calistir()
+        //{
+        //    return "Araba Çalıştı";
+        //}
+
+        public abstract string Calistir();
     }
 }
