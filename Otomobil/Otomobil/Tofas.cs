@@ -8,6 +8,7 @@ namespace Otomobil
 {
     public class Tofas : Araba
     {
+        //yapıcı metod
         public Tofas()
         {
             seri = "Serçe";
